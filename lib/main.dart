@@ -20,17 +20,23 @@ class MyApp extends StatelessWidget {
             child: Text(appTitle),
           ),
         ),
-        body: const SingleChildScrollView(
+        body: SingleChildScrollView(
           child: Column(
             children: [
-              TitleSection(
+              Image.asset(
+                'images/lake.jpg',
+                width: 600,
+                height: 240,
+                fit: BoxFit.cover,
+              ),
+              const TitleSection(
                 name: 'Oeschinen Lake Campground',
                 location: 'Kandersteg, Switzerland',
                 isFavorite: false,
                 totalFavorites: 19,
               ),
-              ButtonSection(),
-              Padding(
+              const ButtonSection(),
+              const Padding(
                 padding: EdgeInsets.all(32),
                 child: Text(
                   'Lake Oeschinen lies at the foot of the Blüemlisalp in the '
