@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/button_section.dart';
 import 'package:myapp/title_section.dart';
 
 void main() {
@@ -28,6 +29,7 @@ class MyApp extends StatelessWidget {
                 isFavorite: false,
                 totalFavorites: 19,
               ),
+              ButtonSection(),
             ],
           ),
         ),
