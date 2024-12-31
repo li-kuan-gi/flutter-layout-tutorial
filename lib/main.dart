@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/title_section.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,8 +19,17 @@ class MyApp extends StatelessWidget {
             child: Text(appTitle),
           ),
         ),
-        body: const Center(
-          child: Text('Hello, world!!!'),
+        body: const SingleChildScrollView(
+          child: Column(
+            children: [
+              TitleSection(
+                name: 'Oeschinen Lake Campground',
+                location: 'Kandersteg, Switzerland',
+                isFavorite: false,
+                totalFavorites: 19,
+              ),
+            ],
+          ),
         ),
       ),
     );
